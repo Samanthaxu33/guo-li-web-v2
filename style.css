@@ -152,38 +152,60 @@ nav {
   }
 
   .logo-section {
-    flex-shrink: 0;
-    flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center; /* LOGO 与公司文字垂直居中 */
   }
 
   .logo {
     width: 200px !important;
-    height: auto;
     flex-shrink: 0;
   }
 
   .company-info {
-    max-width: calc(100% - 212px); /* 保留 logo + 间距空间 */
-    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: calc(100% - 212px); /* 留出 logo 和间距 */
+    word-break: break-word;
+    white-space: normal;
   }
 
+  /* ✅ 英文公司名称两行 */
   .company-name span.en {
+    display: block;
     font-size: 16px;
     line-height: 1.2;
+    white-space: normal;
+    word-break: break-word;
   }
 
+  .company-name span.en::after {
+    content: "\A CO., LTD.";
+    white-space: pre;
+  }
+
+  /* ✅ 英文标语两行 */
   .slogan span.en {
+    display: block;
     font-size: 13px;
-    line-height: 1.2;
+    line-height: 1.4;
+    white-space: pre-line;
+    word-break: break-word;
   }
 
+  /* ✅ 中文公司名称：保持一行但缩小字体 */
   .company-name span.zh {
-    font-size: 20px;
+    display: inline-block;
+    font-size: 18px; /* 原本是 24px，现在缩小一点避免贴边 */
+    line-height: 1.2;
+    white-space: nowrap;
   }
 
+  /* ✅ 中文标语保持一行 */
   .slogan span.zh {
+    display: block;
     font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
   }
 }
 
