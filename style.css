@@ -173,7 +173,8 @@ nav {
     font-size: 16px;
     line-height: 1.3;
     white-space: normal;
-    word-break: break-word;
+    word-break: keep-all;         /* ✅ 不拆单词 */
+    overflow-wrap: break-word;    /* ✅ 换行时尽量保持整体 */
   }
 
   /* 分句换行：将两个句号替换成换行符显示 */
