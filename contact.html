@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Guo Li International</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ✅ 顶部栏导航区 -->
+  <nav>
+    <div class="top-bar">
+      <div class="logo-section">
+        <a href="index.html">
+          <img src="logo.png" alt="Logo" class="logo" />
+        </a>
+        <div class="company-info">
+          <div class="company-name">
+            <span class="en">GUO LI INTERNATIONAL CO., LTD.</span>
+            <span class="zh" style="display: none;">国力国际有限公司</span>
+          </div>
+          <div class="slogan">
+            <span class="en">Built on Trust. Driven by Service.</span>
+            <span class="zh" style="display: none;">信任为基，服务为本</span>
+          </div>
+        </div>
+      </div>
+      <div class="top-right">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <button id="langBtn" onclick="switchLanguage()">English / 中文</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ 菜单栏导航 -->
+  <ul class="menu" id="mainMenu">
+    <li><a href="index.html"><span class="en">HOME</span><span class="zh" style="display: none;">首页</span></a></li>
+    <li><a href="about.html"><span class="en">ABOUT</span><span class="zh" style="display: none;">关于我们</span></a></li>
+    <li><a href="services.html"><span class="en">SERVICES</span><span class="zh" style="display: none;">服务内容</span></a></li>
+    <li><a href="contact.html"><span class="en">CONTACT</span><span class="zh" style="display: none;">联系我们</span></a></li>
+  </ul>
+
+  <!-- ✅ Hero 背景图区域 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Hero 区块：联系我们 -->
+<section class="hero-section contact-hero"> <!-- 👈 专属背景类名控制背景图 -->
+  <div class="hero-overlay">
+    <div class="hero-textbox">
+      <div class="hero-yellow-bar"></div>
+      <div class="hero-text">
+        <!-- 主标题 -->
+        <h1 class="hero-title animate delay-1">
+          <span class="en">Contact Us</span>
+          <span class="zh">联系我们</span>
+        </h1>
+
+        <!-- 副标题段落 -->
+        <div class="hero-subtitle animate delay-2">
+          <span class="en">
+           We firmly believe that every successful project starts with clear communication and truly dependable service. No matter the size or complexity of your job — residential or commercial — you can always count on us to get it done safely, efficiently, and with integrity.
+          </span>
+          <span class="zh">
+            我们始终相信，每一个成功的工程都始于清晰的沟通、周密的规划，以及值得信赖的服务。无论您的项目规模大小或施工复杂程度如何——无论是住宅还是商业工程——您都可以放心交给我们，我们将始终以安全、高效、诚信的态度完成每一项工作。
+          </span>
+        </div>
+
+        <!-- 标语 -->
+        <div class="hero-tagline animate delay-3">
+          <span class="en">Contact us today to bring your vision to life.</span>
+          <span class="zh">欢迎联系我们，让您的项目从此起步，顺利实现。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- 填写联系表单或联系方式 -------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="contact-form-section">
+  <div class="contact-container">
+
+    <!-- 左侧文字信息 -->
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <h4><span class="en">Hours</span><span class="zh" style="display: none;">营业时间</span></h4>
+          <p><span class="en">Mon – Sat： 7:00am – 6:00pm</span><span class="zh" style="display: none;">周一 – 周六： 早上 7:00 – 晚上 6:00</span></p>
+          <p><span class="en">Closed Sundays & Stat Holidays</span><span class="zh" style="display: none;">周日及节假日休息</span></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4><span class="en">Phone</span><span class="zh" style="display: none;">电话</span></h4>
+          <p><a href="tel:9022991888">902-299-1888</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4><span class="en">Email</span><span class="zh" style="display: none;">电邮</span></h4>
+          <p><a href="mailto:guoliltd@gmail.com">guoliltd@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4><span class="en">Location</span><span class="zh" style="display: none;">地址</span></h4>
+          <p><span class="en">Greater Toronto Area, ON</span><span class="zh" style="display: none;">安大略省大多伦多地区</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 右侧表单 -->
+    <div class="contact-form">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label-bold"><span class="en">First Name</span><span class="zh">名</span> *</label>
+            <input type="text" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold"><span class="en">Last Name</span><span class="zh">姓</span> *</label>
+            <input type="text" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label-bold"><span class="en">Email</span><span class="zh">电邮</span> *</label>
+            <input type="text" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold"><span class="en">Phone</span><span class="zh">电话</span> *</label>
+            <input type="tel" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold">
+            <span class="en">Address for Services Required</span>
+            <span class="zh">服务地址</span> *
+          </label>
+
+          <!-- 第一行：Street Address -->
+          <div class="form-row">
+            <div class="form-subgroup full-width">
+              <input type="text" id="addressInput" placeholder="Street Address">
+            </div>
+          </div>
+
+          <!-- 第二行：City 和 Postal Code -->
+          <div class="form-row">
+            <div class="form-subgroup">
+              <input type="text" id="cityInput" placeholder="City">
+            </div>
+          <div class="form-subgroup">
+            <input type="text" id="postalInput" placeholder="Postal Code">
+          </div>
+        </div>
+      </div>
+
+
+        <!-- 类型选择 -->
+        <div class="form-group">
+          <label class="form-label-bold"><span class="en">Type of Enquiry</span><span class="zh">咨询类型</span> *</label>
+         <select id="enquirySelect" required>
+           <option value="">Please Select</option>
+           <option value="quote">Request a Quote</option>
+           <option value="hauling">Hauling Service Inquiry</option>
+           <option value="excavation">Excavation / Site Work Inquiry</option>
+           <option value="delivery">Material Delivery Inquiry</option>
+           <option value="removal">Asphalt / Concrete Removal Inquiry</option>
+           <option value="pool">Pool Digging or Removal</option>
+           <option value="snow">Snow Hauling Service</option>
+           <option value="general">General Question</option>
+           <option value="other">Other</option>
+         </select>
+
+        </div>
+
+        <!-- 留言 -->
+        <div class="form-group">
+          <label class="form-label-bold"><span class="en">Message</span><span class="zh">留言</span> *</label>
+          <textarea rows="5"></textarea>
+        </div>
+
+        <!-- 提交按钮 -->
+        <button type="submit" class="submit-btn">
+          <span class="en">Submit</span>
+          <span class="zh">提交</span>
+        </button>
+      </form>
+    </div>
+    <!-- contact-form 结束 -->
+  </div>
+</section>
+
+
+  <!-- Contact 联系方式区块 --------------------------------------------------------------------------------------------------------->
+<section class="contact-section" style="padding: 60px 20px; background-color: #2a4351; width: 100%;">
+  <div style="
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  ">
+    <!-- 左边静态文字信息 -->
+    <div style="flex: 1; min-width: 260px; text-align: center; font-size: 22px; color: #ffffff;">
+      <p style="margin: 10px 0; font-weight: bold;">
+        <span class="en">Guo Li International Co., Ltd.</span>
+        <span class="zh" style="display: none;">国力国际有限公司</span>
+      </p>
+      <p style="margin: 10px 0;">guoliltd@gmail.com</p>
+      <p style="margin: 10px 0;">(902) 299-1888</p>
+      <p style="margin: 10px 0;">Toronto, ON</p>
+    </div>
+
+    <!-- 右边 Contact 按钮 -->
+    <div style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center;">
+      <a href="contact.html" class="contact-btn">
+        <button style="background-color: #f7b500; border: none; color: #fff; padding: 12px 28px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer;">
+          <span class="en">Contact</span>
+          <span class="zh" style="display: none;">联系我们</span>
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+ <!-- 👈 contact-section 的结束 -->
+
+  <!-- ✅ 返回顶部按钮 --------------------------------------------------------------------------------------------------------------------------------->
+  <button id="backToTopBtn" style="display: none; position: fixed; bottom: 40px; right: 30px; background-color: #f4f3ef; color: white; border: none; padding: 12px 16px; font-size: 14px; border-radius: 4px; cursor: pointer; z-index: 999;">
+    <span class="en">Back to Top</span>
+    <span class="zh" style="display: none;">回到顶部</span>
+  </button>
+
+  <!-- ✅ 页脚版权 -------------------------------------------------------------------------------------------------------------------------------------->
+  <footer style="text-align: center; padding: 16px 10px; font-size: 14px; color: #555; background-color: #f2f2f2;">
+    ©2025 by Guo Li International Co., Ltd. All rights reserved.
+  </footer>
+
+  <!-- ✅ JS 脚本 -->
+  <script>
+
+    function toggleMenu() {
+      const menu = document.getElementById("mainMenu");
+      menu.classList.toggle("show");
+    }
+
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+    backToTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    
+  </script>
+  <script src="language.js"></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Guo Li International</title>
+  <link rel="stylesheet" href="style.css"/> <!-- 引入统一样式表 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <style>
+    /* 页面主内容区域样式 */
+    #aboutContent {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    #aboutContent h1 {
+      color: #f4a300;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #aboutContent h2 {
+      color: #2a4351;
+      font-size: 24px;
+      margin-top: 40px;
+    }
+
+    #aboutContent p {
+      color: #333;
+      font-size: 16px;
+    }
+
+    .zh {
+      display: none; /* 默认隐藏中文 */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部栏导航区 -->
+  <nav>
+    <div class="top-bar">
+      <div class="logo-section">
+        <!-- ✅ 将 LOGO 包裹在 <a> 标签中，点击后切换回主页 -->
+        <a href="index.html">
+          <img src="logo.png" alt="Logo" class="logo" />
+        </a>
+
+        <div class="company-info">
+          <div class="company-name">
+            <span class="en">GUO LI INTERNATIONAL CO., LTD.</span>
+            <span class="zh" style="display: none;">国力国际有限公司</span>
+          </div>
+          <div class="slogan">
+            <span class="en">Built on Trust. Driven by Service.</span>
+            <span class="zh" style="display: none;">信任为基，服务为本</span>
+          </div>
+        </div>
+      </div>
+      <div class="top-right">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <button id="langBtn" onclick="switchLanguage()">English / 中文</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 菜单栏导航区 -->
+ <ul class="menu" id="mainMenu">
+  <li>
+    <a href="index.html">
+      <span class="en">HOME</span>
+      <span class="zh" style="display: none;">首页</span>
+    </a>
+  </li>
+  <li>
+    <a href="about.html">
+      <span class="en">ABOUT</span>
+      <span class="zh" style="display: none;">关于我们</span>
+    </a>
+  </li>
+  <li>
+    <a href="services.html">
+      <span class="en">SERVICES</span>
+      <span class="zh" style="display: none;">服务内容</span>
+    </a>
+  </li>
+  <li>
+    <a href="contact.html">
+      <span class="en">CONTACT</span>
+      <span class="zh" style="display: none;">联系我们</span>
+    </a>
+  </li>
+</ul>
+
+
+  <!-- About 页面主内容区 --------------------------------------------------------------------------------------------------------------------------------->
+ <!-- Hero 区块：关于我们页面 -->
+<section class="hero-section about-hero"> <!-- 👈 背景图控制类：.about-hero -->
+  <div class="hero-overlay">
+    <div class="hero-textbox">
+      <div class="hero-yellow-bar"></div> <!-- 统一样式黄线 -->
+      <div class="hero-text">
+        <!-- 主标题 -->
+        <h1 class="hero-title animate delay-1">
+          <span class="en">About Us</span>
+          <span class="zh">关于我们</span>
+        </h1>
+
+        <!-- 副标题段落 -->
+        <div class="hero-subtitle animate delay-2">
+          <span class="en">
+            We specialize in hauling, excavation, and site cleanup for both residential and commercial needs. With hands-on experience, reliable equipment, and a strong work ethic, we tackle every job — big or small — with precision, efficiency, and care.
+          </span>
+          <span class="zh">
+            我们专注于为住宅和商业项目提供砂石运输、地面开挖和现场清理服务。凭借丰富的实战经验、可靠的设备以及扎实的工作态度，我们无论面对大小工程，都始终以专业、高效和细致的态度完成每一项任务。
+          </span>
+        </div>
+
+        <!-- 标语 -->
+        <div class="hero-tagline animate delay-3">
+          <span class="en">Proudly serving our community with honest pricing and reliable service.</span>
+          <span class="zh">我们以合理价格与可靠服务，真诚为社区客户提供帮助。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Who We Are 内容部分 ---------------------------------------------------------------------------------------------------------->
+  <!-- Who We Are Section without background image -->
+<section class="who-we-are" id="whoWeAre">
+  <div class="who-we-are-text">
+    <h2>
+      <span class="en">Who We Are</span>
+      <span class="zh">关于我们</span>
+    </h2>
+
+    <!-- 加这条横线 -->
+    <div class="section-divider"></div>
+
+    <p>
+      <span class="en">
+        Guo Li International is a family-owned and operated hauling and excavation company based in Toronto, proudly serving both residential and commercial clients across the GTA. We specialize in material delivery, site excavation, concrete and asphalt removal, debris hauling, pool and pond digging or backfilling, and seasonal services such as snow hauling and surface clearing.
+      </span>
+      <span class="zh">
+        国力国际是一家在多伦多本地运营的家族企业，专注于建筑材料运输与现场挖掘服务，服务范围覆盖整个大多伦多地区。我们为住宅与商业客户提供建材运送、场地挖掘、沥青和水泥拆除、建筑垃圾清运、泳池及水池的挖掘与填埋、以及冬季的清雪运输和地面清理服务。
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        Our fleet of 20-yard dump trucks and dependable equipment allows us to handle a wide range of jobs — from driveways and landscaping to full-scale site prep and cleanup. Whether you need to excavate a backyard, remove old asphalt, or backfill a swimming pool, we have the right tools and the right people for the job.
+      </span>
+      <span class="zh">
+        我们配备 20 码大型自卸卡车与稳定可靠的施工设备，能够高效承接各种大小工程——从车道翻新、园艺整理，到大型地面清场和场地准备。无论您是需要挖个后院泳池、填一个坑、拆除旧车道，还是清运成堆建筑垃圾，我们都能按需提供专业协助。
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        We are also known for our reliable delivery of aggregate materials — including gravel, limestone, sand, soil, and decorative stone — in a range of sizes and volumes. Whether you're building a driveway, preparing a landscape, or filling a foundation, we can supply and deliver the right materials, right where you need them.
+      </span>
+      <span class="zh">
+        我们也专注运送各类砂石建材，包括碎石、石灰石、沙子、泥土、装饰用石料等各种规格。无论您是铺设车道、整理园林，还是需要填筑基础，我们都能按时将合适的材料运送到指定位置，服务高效可靠。
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        At Guo Li, integrity isn’t just a slogan — it’s how we work every day. We believe that clear communication, honest pricing, and reliable service are the foundation of any successful project. That means we arrive when we say we will, we finish what we promise, and we clean up when the job is done.
+      </span>
+      <span class="zh">
+        在国力，诚信不是一句口号，而是我们每天做事的基本原则。我们坚持价格透明、沟通清晰、服务到位——说到的就做到，约好的就准时，完工后也绝不留下乱摊子。我们不偷工、不敷衍，只用最实在的方法把事情做好。
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        We also understand that time matters. That’s why we prioritize punctuality and efficiency without sacrificing quality. Our team is experienced, respectful, and takes pride in doing things the right way — not just the easy way.
+      </span>
+      <span class="zh">
+        我们知道，时间就是工程的成本。我们承诺准时出车、迅速执行，同时不牺牲施工质量。我们的团队经验丰富、待人有礼、工作讲究，干活不走捷径，现场不留尾巴。
+      </span>
+    </p>
+
+    <p>
+      <span class="en">
+        Over the years, we’ve built long-standing relationships with contractors, homeowners, landscapers, and builders who trust us to show up and get the job done — no excuses, no surprises. Whether it’s your first time hiring us or your fifth, we aim to deliver a service experience that’s smooth, stress-free, and dependable.
+      </span>
+      <span class="zh">
+        这些年，我们与承包商、园艺公司、建筑单位、个人房主建立了稳定信任的合作关系。他们之所以持续找我们，不只是因为我们有卡车和工具，而是因为我们靠谱、守信、干净、到位。无论是第一次合作还是多年往来，我们都始终以高标准要求自己。
+      </span>
+    </p>
+
+    <p style="font-weight: bold; margin-top: 30px;">
+      <span class="en">Family-owned. Integrity-driven. On time. Clean work. Done right.</span>
+      <span class="zh">家族运营 · 诚信为本 · 准时高效 · 干净利落 · 客户放心</span>
+    </p>
+  </div>
+</section>
+
+<!-- What We Do 内容部分 ---------------------------------------------------------------------------------------------------------->
+
+<!-- What We Do 区块 -->
+<section class="what-we-do-section">
+  <div class="what-we-do-container">
+    <!-- 左边图片 -->
+    <div class="what-we-do-image"></div>
+
+    <!-- 右边文字列表 -->
+    <div class="what-we-do-text">
+      <h2>
+        <span class="en">What We Do</span>
+        <span class="zh">我们的服务</span>
+      </h2>
+
+      <div class="service-item animate-service delay-1">
+        <img src="asphalt icon.jpg" alt="Asphalt Icon" class="service-icon" />
+        <div>
+          <h3><span class="en">Asphalt & Concrete Removal</span><span class="zh">沥青 / 水泥拆除</span></h3>
+        </div>
+      </div>
+
+      <div class="service-item animate-service delay-2">
+        <img src="Soil icon.jpg" alt="Soil Icon" class="service-icon" />
+        <div>
+          <h3><span class="en">Interlock & Soil Excavation</span><span class="zh">砖石与泥土挖掘</span></h3>
+        </div>
+      </div>
+
+      <div class="service-item animate-service delay-3">
+        <img src="delivery icon.jpg" alt="Delivery Icon" class="service-icon" />
+        <div>
+          <h3><span class="en">Material Delivery</span><span class="zh">建材运输</span></h3>
+        </div>
+      </div>
+
+      <div class="service-item animate-service delay-4">
+        <img src="digging icon.jpg" alt="Digging Icon" class="service-icon" />
+        <div>
+          <h3><span class="en">Pool & Pit Digging / Backfilling</span><span class="zh">泳池 / 坑位挖掘与填埋</span></h3>
+        </div>
+      </div>
+
+      <div class="service-item animate-service delay-5">
+        <img src="hauling icon.jpg" alt="Hauling Icon" class="service-icon" />
+        <div>
+          <h3><span class="en">Construction Waste</span><span class="zh">建筑垃圾清运</span></h3>
+        </div>
+      </div>
+      
+      <div class="service-item animate-service delay-6">
+        <img src="winter icon.jpg" alt="winter Icon" class="service-icon" />
+        <div>
+          <h3><span class="en">Winter Hauling & Surface Clearing</span><span class="zh">冬季清雪与地面清理</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const serviceItems = document.querySelectorAll('.service-item');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 重新触发动画
+        entry.target.classList.remove('animate');
+        void entry.target.offsetWidth; // 强制重绘
+        entry.target.classList.add('animate');
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  serviceItems.forEach(item => observer.observe(item));
+</script>
+
+
+  <!-- 页脚或返回顶部按钮可以继续添加 ---------------------------------------------------------------------------------------------------------->
+
+<script>
+  // 页面加载时默认显示英文
+  function setLanguageDefault() {
+    document.querySelectorAll('.en').forEach(el => el.style.display = 'inline');
+    document.querySelectorAll('.zh').forEach(el => el.style.display = 'none');
+  }
+
+  // 切换中英文显示
+  function switchLanguage() {
+    const zh = document.querySelectorAll('.zh');
+    const en = document.querySelectorAll('.en');
+
+    const isZhVisible = [...zh].some(el => el.style.display !== 'none');
+
+    const newLang = isZhVisible ? 'en' : 'zh';
+    localStorage.setItem('language', newLang); // ✅ 保存语言偏好
+
+    zh.forEach(el => el.style.display = newLang === 'zh' ? 'inline' : 'none');
+    en.forEach(el => el.style.display = newLang === 'zh' ? 'none' : 'inline');
+  }
+
+    // 页面加载时应用语言偏好
+  window.addEventListener('DOMContentLoaded', () => {
+    const lang = localStorage.getItem('language') || 'en'; // 默认为英文
+    const zh = document.querySelectorAll('.zh');
+    const en = document.querySelectorAll('.en');
+
+    zh.forEach(el => el.style.display = lang === 'zh' ? 'inline' : 'none');
+    en.forEach(el => el.style.display = lang === 'zh' ? 'none' : 'inline');
+  });
+</script>
+
+<!-- Contact 联系方式区块 --------------------------------------------------------------------------------------------------------->
+<section class="contact-section" style="padding: 60px 20px; background-color: #2a4351; width: 100%;">
+  <div style="
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  ">
+    <!-- 左边静态文字信息 -->
+    <div style="flex: 1; min-width: 260px; text-align: center; font-size: 22px; color: #ffffff;">
+      <p style="margin: 10px 0; font-weight: bold;">
+        <span class="en">Guo Li International Co., Ltd.</span>
+        <span class="zh" style="display: none;">国力国际有限公司</span>
+      </p>
+      <p style="margin: 10px 0;">guoliltd@gmail.com</p>
+      <p style="margin: 10px 0;">(902) 299-1888</p>
+      <p style="margin: 10px 0;">Toronto, ON</p>
+    </div>
+
+    <!-- 右边 Contact 按钮 -->
+    <div style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center;">
+      <a href="contact.html" class="contact-btn">
+        <button style="background-color: #f7b500; border: none; color: #fff; padding: 12px 28px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer;">
+          <span class="en">Contact</span>
+          <span class="zh" style="display: none;">联系我们</span>
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+ <!-- 👈 contact-section 的结束 -->
+
+<!-- 返回顶部按钮 --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<button id="backToTopBtn" style="display: none; position: fixed; bottom: 40px; right: 30px; background-color: #f4f3ef; color: white; border: none; padding: 12px 16px; font-size: 14px; border-radius: 4px; cursor: pointer; z-index: 999;">
+  <span class="en">Back to Top</span>
+  <span class="zh" style="display: none;">回到顶部</span>
+</button>
+
+<!-- 页脚版权 ------------------------------------------------------------------------------------------------------------------------------------>
+<footer style="text-align: center; padding: 16px 10px; font-size: 14px; color: #555; background-color: #f2f2f2;">
+  ©2025 by Guo Li International Co., Ltd. All rights reserved.
+</footer>
+
+<!-- JavaScript -->
+<!-- ✅ 这是修复语言切换后的 JavaScript -->
+<script>
+
+  function toggleMenu() {
+    const menu = document.getElementById("mainMenu");
+    menu.classList.toggle("show");
+  }
+
+  function showSection(section) {
+    const home = document.getElementById('homeContent');
+    const about = document.getElementById('aboutContent');
+    if (section === 'about') {
+      home.style.display = 'none';
+      about.style.display = 'block';
+    } else {
+      home.style.display = 'block';
+      about.style.display = 'none';
+    }
+  }
+
+  // 返回顶部按钮逻辑
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+<script src="language.js"></script>
+</body>
+</html>
+
