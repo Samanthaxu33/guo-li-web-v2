@@ -152,8 +152,24 @@ nav {
   }
 
   .logo {
-    width: 200px !important; /* 强制统一 LOGO 宽度 */
-}
+    width: 200px !important;
+    flex-shrink: 0; /* 防止被压缩 */
+  }
+
+  .logo-section {
+    flex-wrap: nowrap;       /* 避免 LOGO 和文字换行挤压 */
+    align-items: flex-start; /* 避免 logo 被“顶下去” */
+  }
+
+  .company-info {
+    max-width: calc(100% - 200px - 12px); /* 限制公司文字宽度，避免压缩 logo */
+    overflow-wrap: break-word; /* 文字超出时自动换行 */
+  }
+
+  .company-name,
+  .slogan {
+    font-size: 14px; /* 移动端压缩文字大小 */
+  }
 }
 
 /* ========== index 页面 ========================================================================================================================== */
