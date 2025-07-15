@@ -64,7 +64,35 @@
     </div>
   </nav>
 
-  <!-- 菜单栏导航区 -->
+  <script>
+  function adjustCompanyNameForMobile() {
+    const isMobile = window.innerWidth <= 768;
+    const langBtn = document.getElementById('langBtn');
+    const isEnglish = langBtn.innerText.includes("中文");
+
+    const companyName = document.querySelector('.company-name .en');
+    if (!companyName || !isMobile) return;
+
+    if (isEnglish) {
+      companyName.innerHTML = 'GUO LI INTERNATIONAL<br>CO., LTD.';
+    } else {
+      companyName.innerHTML = '国力国际有限公司';
+    }
+  }
+
+  // 初始加载
+  adjustCompanyNameForMobile();
+
+  // 语言切换时也执行（你已有 switchLanguage 函数的话，加这句）
+  document.getElementById('langBtn').addEventListener('click', function () {
+    setTimeout(adjustCompanyNameForMobile, 100); // 延时执行，确保语言切换后再改文字
+  });
+
+  // 屏幕尺寸改变时重新判断
+  window.addEventListener('resize', adjustCompanyNameForMobile);
+</script>
+
+  <!-- 菜单栏导航区 ------------------------------------------------------------------------------------------------------------------->
  <ul class="menu" id="mainMenu">
   <li>
     <a href="index.html">
