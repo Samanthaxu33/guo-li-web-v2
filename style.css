@@ -314,14 +314,16 @@ nav {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-with-bg {
-    height: auto !important;
-    padding-top: 60px !important;
-    padding-bottom: 55vw !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center bottom !important;
+    background-size: contain;        /* ✅ 图片缩小显示完整 */
+    background-repeat: no-repeat;    /* ✅ 不重复平铺 */
+    background-position: center top; /* ✅ 居中显示，但稍微向上 */
+    background-color: #000;          /* ✅ 可选，加背景色避免白边 */
+  }
+
+  .hero {
+    height: 75vh; /* ✅ 高度稍微调小，适配 contain 效果 */
   }
 
   .hero h1 {
