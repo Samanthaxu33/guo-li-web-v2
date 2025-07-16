@@ -323,7 +323,7 @@ nav {
   }
 
   .hero {
-    height: 65vh; /* ✅ 从100vh 调整为 85vh，图片不过满 */
+    height: 55vh; /* ✅ 从100vh 调整为 85vh，图片不过满 */
     padding: 0 10px;
     justify-content: center;
   }
@@ -751,7 +751,7 @@ nav {
 /* ✅ 手机版滚动评论加速 */
 @media (max-width: 767px) {
   .review-scroll-track {
-    animation: scrollReviews 20s linear infinite;  /* ✅ 手机上速度加快一倍 */
+    animation: scrollReviews 10s linear infinite;  /* ✅ 手机上速度加快一倍 */
   }
 }
 
