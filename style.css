@@ -1026,34 +1026,36 @@ nav {
 .hero-text .delay-3 { animation-delay: 0.8s; }
 
 /* ✅ 响应式适配（平板与手机） */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-section {
-    height: 400px;
+    height: 55vh; /* 数字越小，图片越小 */
     background-position: center top;
   }
 
   .hero-textbox {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;           /* ✅ 保持横向排列 */
+    align-items: flex-start;       /* ✅ 上对齐 */
     padding: 0 20px;
     margin-top: 40px;
     transform: none;
   }
 
   .hero-yellow-bar {
-    height: 200px;
-    margin: 0 0 20px 0;
+    height: 160px;
+    width: 6px;
+    margin-right: 20px;            /* ✅ 黄线与文字的间距 */
+    margin-top: 10px;              /* ✅ 上下位置调一点 */
   }
 
   .hero-title {
-    font-size: 36px;
-    text-align: center;
+    font-size: 32px;
+    text-align: left;
   }
 
   .hero-subtitle,
   .hero-tagline {
-    font-size: 16px;
-    text-align: center;
+    font-size: 14px;
+    text-align: left;
   }
 }
 
