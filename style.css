@@ -316,35 +316,40 @@ nav {
 
 @media (max-width: 767px) {
   .hero-with-bg {
-    background-size: contain;        /* ✅ 图片缩小显示完整 */
-    background-repeat: no-repeat;    /* ✅ 不重复平铺 */
-    background-position: center top; /* ✅ 居中显示，但稍微向上 */
-    background-color: #000;          /* ✅ 可选，加背景色避免白边 */
+    background-size: cover;           /* ✅ 改为 cover，填满整个区域 */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000;           /* ✅ 保底黑色背景 */
   }
 
   .hero {
-    height: 75vh; /* ✅ 高度稍微调小，适配 contain 效果 */
+    height: 100vh;                    /* ✅ 高度拉满，防止出现黑底 */
+    padding: 0 10px;                  /* ✅ 防止文字贴边 */
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding: 0 10px;
   }
 
   .hero h1 {
-    font-size: 36px !important;
+    font-size: 28px !important;       /* ✅ 更小字体 */
     line-height: 1.3 !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 15px !important;
   }
 
   .hero p {
-    font-size: 20px !important;
+    font-size: 16px !important;       /* ✅ 更小字体 */
     line-height: 1.5 !important;
-    margin: 20px 0 !important;
+    margin: 15px 0 !important;
   }
 
   .tagline span {
-    font-size: 18px !important;
-    margin-top: 10px !important;
-    margin-bottom: 20px !important;
+    font-size: 14px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
   }
 }
-
 
 /* 五张图片 --------------------------------------------------------------------------------------------------- */
 
