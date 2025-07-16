@@ -314,6 +314,36 @@ nav {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .hero-with-bg {
+    background-size: contain !important;   /* ✅ 保证整张图完整显示 */
+    background-repeat: no-repeat;
+    background-position: center bottom;    /* ✅ 把图像贴底部，车靠下对齐 */
+    height: auto;                          /* ✅ 允许容器高度自适应 */
+    padding-top: 40px;                     /* ✅ 留出顶部空间放文字 */
+    padding-bottom: 50vw;                  /* ✅ 以屏幕宽度为基础的高度控制图比例 */
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tagline span {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 /* 五张图片 --------------------------------------------------------------------------------------------------- */
 
 /* 图片滑动容器 */
