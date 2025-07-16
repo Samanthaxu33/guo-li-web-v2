@@ -748,6 +748,13 @@ nav {
   100% { transform: translateX(-50%); }
 }
 
+/* ✅ 手机版滚动评论加速 */
+@media (max-width: 767px) {
+  .review-scroll-track {
+    animation: scrollReviews 20s linear infinite;  /* ✅ 手机上速度加快一倍 */
+  }
+}
+
 /* Contact --------------------------------------------------------------------------------------------------- */
 
 /* Contact 按钮 hover 放大效果 */
