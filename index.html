@@ -129,7 +129,7 @@
       <div class="hero-content">
         <h1 class="slide-in delay-1">
           <span class="en">Reliable Hauling &amp; Excavation Services in the GTA</span>
-          <span class="zh" style="display: none;">多伦多地区可靠的运输与挖掘服务</span>
+          <span class="zh" style="display: none;">大多伦多地区可靠运输与挖掘服务</span>
         </h1>
         <div class="hero-line slide-in delay-2"></div>
         <p class="slide-in delay-3">
@@ -164,7 +164,7 @@
       </script>
 
     <!-- 图片展示区 ------------------------------------------------------------------------------------------------------------------------------>
-    <section class="image-scroll">
+    <section class="image-scroll" id="mobile-carousel">
       <div class="image-box up" style="background-image: url('1.jpg');"></div>
       <div class="image-box down" style="background-image: url('6.jpg');"></div>
       <div class="image-box up" style="background-image: url('14.jpg');"></div>
@@ -172,6 +172,29 @@
       <div class="image-box up" style="background-image: url('8.jpg');"></div>
     </section>
   </div>
+
+  <script>
+  if (window.innerWidth <= 768) {
+    const images = document.querySelectorAll('#mobile-carousel .image-box');
+    let current = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.remove('active');
+        if (i === index) {
+          img.classList.add('active');
+        }
+      });
+    }
+
+    showImage(current); // 初始显示第一张
+
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      showImage(current);
+    }, 1500); // 每1.5秒切换
+  }
+</script>
 
 <!-- Who We Are 区块 ------------------------------------------------------------------------------------------------------------------------------->
 
