@@ -316,12 +316,12 @@ nav {
 
 @media (max-width: 768px) {
   .hero-with-bg {
-    background-size: contain !important;   /* ✅ 保证整张图完整显示 */
+    background-size: contain !important;   /* ✅ 让整张图都显示出来 */
     background-repeat: no-repeat;
-    background-position: center bottom;    /* ✅ 把图像贴底部，车靠下对齐 */
-    height: auto;                          /* ✅ 允许容器高度自适应 */
-    padding-top: 40px;                     /* ✅ 留出顶部空间放文字 */
-    padding-bottom: 50vw;                  /* ✅ 以屏幕宽度为基础的高度控制图比例 */
+    background-position: center bottom;
+    height: auto !important;               /* ✅ 覆盖掉 desktop 的 90vh */
+    padding-top: 60px;
+    padding-bottom: 55vw; /* 控制图像高度填充比例（关键） */
   }
 
   .hero h1 {
@@ -333,8 +333,7 @@ nav {
   .hero p {
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 
   .tagline span {
