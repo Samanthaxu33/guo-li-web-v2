@@ -323,7 +323,7 @@ nav {
   }
 
   .hero {
-    height: 85vh; /* ✅ 从100vh 调整为 85vh，图片不过满 */
+    height: 65vh; /* ✅ 从100vh 调整为 85vh，图片不过满 */
     padding: 0 10px;
     justify-content: center;
   }
