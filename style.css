@@ -1041,20 +1041,20 @@ nav {
   }
 
   .hero-yellow-bar {
-    height: 450px;
+    height: 400px;
     width: 50px;
     margin-right: 20px;            /* ✅ 黄线与文字的间距 */
     margin-top: 10px;              /* ✅ 上下位置调一点 */
   }
 
   .hero-title {
-    font-size: 45px;
+    font-size: 38px;
     text-align: left;
   }
 
   .hero-subtitle,
   .hero-tagline {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
   }
 }
