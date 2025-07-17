@@ -968,60 +968,65 @@ nav {
   margin-top: 20px;
 }
 
-/* ✅ 响应式优化一致性 */
+/* ✅ 手机版 Hero 样式统一优化 */
 @media (max-width: 768px) {
-  /* 📏 Hero 图片 */
+
+  /* 🎯 Hero 背景统一设置（About/Services/Contact） */
   .about-hero,
   .services-hero,
   .contact-hero {
-    height: 55vh; /* 或你想统一的高度，比如 400px */
-    background-size: cover;
-    background-position: center top;
+    background-size: cover !important;
+    background-position: center 50% !important;
+    height: 800px !important;
+    overflow: hidden !important;
   }
 
-  /* 📏 Hero 外框结构：横向排列、左对齐 */
+  /* 🧱 Hero 容器：横向排列黄线 + 左侧文字 */
   .hero-textbox {
-    flex-direction: row;             /* 横向排列黄线+文字 */
-    align-items: flex-start;         /* 上对齐 */
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: flex-start;
     padding: 0 20px;
     margin-top: 60px;
   }
 
-  /* 🔶 黄线尺寸缩小，适配手机 */
+  /* 🔶 黄线样式：细长一些，靠左 */
   .hero-yellow-bar {
-    height: 160px;
     width: 6px;
-    margin: 0 12px 0 0;              /* 黄线和文字之间间距 */
+    height: 160px;
+    margin-right: 12px;
+    margin-left: 0;
   }
 
-  /* ✏️ 文字整体左对齐，防止居中 */
+  /* ✏️ 文字样式：左对齐 + 字体适配 */
   .hero-text {
     text-align: left;
   }
 
-  .hero-title,
-  .hero-subtitle,
-  .hero-tagline {
-    text-align: left !important;
-  }
-
-  /* （可选）调整文字大小更适配手机 */
   .hero-title {
     font-size: 32px;
+    text-align: left !important;
   }
 
   .hero-subtitle {
     font-size: 16px;
     line-height: 1.6;
+    text-align: left !important;
+    margin-top: 10px;
   }
 
   .hero-tagline {
     font-size: 16px;
+    text-align: left !important;
     margin-top: 16px;
   }
-}
 
+  /* ⬇️ 统一缩短 Hero 高度视觉占比 */
+  .hero-section {
+    height: 55vh;
+    background-position: center top;
+  }
+}
 
 /* ✅ 动画：向上淡入 */
 @keyframes fadeInUp {
