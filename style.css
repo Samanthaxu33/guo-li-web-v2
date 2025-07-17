@@ -971,34 +971,48 @@ nav {
 /* ✅ 响应式优化一致性 */
 @media (max-width: 768px) {
   .hero-section {
-    height: 400px;
+    height: 55vh;
     background-position: center top;
   }
 
+  /* 📏 Hero 外框结构：横向排列、左对齐 */
   .hero-textbox {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;             /* 横向排列黄线+文字 */
+    align-items: flex-start;         /* 上对齐 */
+    justify-content: flex-start;
     padding: 0 20px;
-    margin-top: 60px;      /* 👈 保持中等距离 */
+    margin-top: 60px;
   }
 
+  /* 🔶 黄线尺寸缩小，适配手机 */
   .hero-yellow-bar {
-    height: 180px;
-    width: 6px;            /* 在小屏幕上稍细 */
-    margin: 0 0 20px 0;
+    height: 160px;
+    width: 6px;
+    margin: 0 12px 0 0;              /* 黄线和文字之间间距 */
   }
 
+  /* ✏️ 文字整体左对齐，防止居中 */
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-title,
+  .hero-subtitle,
+  .hero-tagline {
+    text-align: left !important;
+  }
+
+  /* （可选）调整文字大小更适配手机 */
   .hero-title {
-    font-size: 36px;
-    text-align: center;
+    font-size: 32px;
   }
 
   .hero-subtitle,
   .hero-tagline {
     font-size: 16px;
-    text-align: center;
   }
 }
+
 
 /* ✅ 动画：向上淡入 */
 @keyframes fadeInUp {
