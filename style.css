@@ -1021,6 +1021,15 @@ nav {
     margin-top: 16px;
   }
 
+  .about-hero .hero-title {
+    font-size: 36px !important;  /* 👈 自行调大这个数值 */
+  }
+
+  .about-hero .hero-subtitle,
+  .about-hero .hero-tagline {
+    font-size: 18px !important;  /* 如需同步放大副标题与标语 */
+  }
+  
   /* ⬇️ 统一缩短 Hero 高度视觉占比 */
   .hero-section {
     height: 55vh;
