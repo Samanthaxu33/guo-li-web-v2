@@ -1377,6 +1377,51 @@ nav {
 .service-item.delay-5.animate { animation-delay: 0.9s; }
 .service-item.delay-6.animate { animation-delay: 1.1s; }
 
+/* ✅ Services 区块：手机端统一图片与文字布局优化 */
+@media screen and (max-width: 768px) {
+  .service-row {
+    flex-direction: column !important;  /* 所有服务区块上下排列，文字在上，图片在下 */
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .service-row.reverse {
+    flex-direction: column !important;  /* 同样上下排列，取消左右交错 */
+  }
+
+  .service-image {
+    margin-top: 20px;
+  }
+
+  .service-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .service-text h3 {
+    font-size: 24px;
+  }
+
+  .service-text h4 {
+    font-size: 18px;
+  }
+
+  .service-text p {
+    font-size: 16px;
+  }
+
+  .service-text .zh {
+    font-size: 14px;
+  }
+
+  .service-underline {
+    margin-top: 30px;
+    height: 6px;
+  }
+}
+
 /* ========== CONTACT 页面 ====================================================================================================================== */
 
 /* Contact 联系表格 ------------------------------------------------------- */
