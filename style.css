@@ -1192,7 +1192,7 @@ nav {
 
 @media (max-width: 768px) {
   .what-we-do-text h2 {
-    font-size: 35px; /* 👈 原来是 38px，缩小一点点 */
+    font-size: 28px; /* 👈 原来是 38px，缩小一点点 */
   }
 }
 
