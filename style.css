@@ -1033,11 +1033,12 @@ nav {
   }
 
   .hero-textbox {
-    flex-direction: row;           /* ✅ 保持横向排列 */
-    align-items: flex-start;       /* ✅ 上对齐 */
+    flex-direction: column;
+    align-items: flex-start;  /* ✅ 改这里：左对齐 */
     padding: 0 20px;
     margin-top: 40px;
     transform: none;
+    text-align: left;         /* ✅ 也加这一行 */
   }
 
   .hero-yellow-bar {
