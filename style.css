@@ -1650,14 +1650,6 @@ textarea {
     width: 100%;
   }
 
-  .about-hero h1 {
-    font-size: 22px;
-  }
-
-  .about-hero .slogan {
-    font-size: 14px;
-  }
-
   .review-card {
     flex: 0 0 95%;
   }
