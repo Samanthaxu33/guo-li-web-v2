@@ -1042,7 +1042,7 @@ nav {
 
   .hero-yellow-bar {
     height: 160px;
-    width: 6px;
+    width: 15px;
     margin-right: 20px;            /* ✅ 黄线与文字的间距 */
     margin-top: 10px;              /* ✅ 上下位置调一点 */
   }
