@@ -970,8 +970,12 @@ nav {
 
 /* ✅ 响应式优化一致性 */
 @media (max-width: 768px) {
-  .hero-section {
-    height: 55vh;
+  /* 📏 Hero 图片 */
+  .about-hero,
+  .services-hero,
+  .contact-hero {
+    height: 55vh; /* 或你想统一的高度，比如 400px */
+    background-size: cover;
     background-position: center top;
   }
 
@@ -1007,9 +1011,14 @@ nav {
     font-size: 32px;
   }
 
-  .hero-subtitle,
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
   .hero-tagline {
     font-size: 16px;
+    margin-top: 16px;
   }
 }
 
@@ -1648,6 +1657,14 @@ textarea {
   .contact-section input,
   .contact-section textarea {
     width: 100%;
+  }
+
+  .about-hero h1 {
+    font-size: 22px;
+  }
+
+  .about-hero .slogan {
+    font-size: 14px;
   }
 
   .review-card {
